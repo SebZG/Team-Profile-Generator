@@ -88,3 +88,14 @@ const promptInern = () => {
     },
   ]);
 }
+
+const promptAddTeamMembers = () => {
+  return inquirer.prompt([
+    {
+      type: "list",
+      name: "addTeamMembers",
+      message: "Select type of team member to add",
+      choices: ["Engineer", "Intern", "None"],
+    }
+  ]);
+}
