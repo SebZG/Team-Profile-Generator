@@ -1,8 +1,9 @@
 {
   "name": "team-profile-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "A CLI that generates a team profile HTML page based on user input",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "lib": "lib"
   },
