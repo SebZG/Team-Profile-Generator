@@ -63,3 +63,28 @@ const promptEngineer = () => {
     },
   ]);
 }
+
+const promptInern = () => {
+  return inquirer.prompt([
+    {
+      type: "input",
+      name: "name",
+      message: "What is the intern's name?",
+    },
+    {
+      type: "input",
+      name: "id",
+      message: "What is the intern's id?",
+    },
+    {
+      type: "input",
+      name: "email",
+      message: "What is the intern's email?",
+    },
+    {
+      type: "input",
+      name: "school",
+      message: "What is the intern's school?",
+    },
+  ]);
+}
