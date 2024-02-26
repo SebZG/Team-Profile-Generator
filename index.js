@@ -9,7 +9,7 @@ const {
   promptManager,
   promptAddTeamMembers,
   promptEngineer,
-  promptInern } = require("./utils/prompts.js");
+  promptIntern } = require("./utils/prompts.js");
 const render = require("./src/page-template.js");
 
 const OUTPUT_DIR = path.resolve(__dirname, "./output/");
@@ -32,7 +32,7 @@ const init = async () => {
         const engineer = new Engineer(engineerData.name, engineerData.id, engineerData.email, engineerData.github);
         teamMembers.push(engineer);
       } else if (addTeamMembers === "Intern") {
-        const internData = await promptInern();
+        const internData = await promptIntern();
         const intern = new Intern(internData.name, internData.id, internData.email, internData.school);
         teamMembers.push(intern);
       } else {

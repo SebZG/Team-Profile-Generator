@@ -50,7 +50,7 @@ const promptEngineer = () => {
   ]);
 };
 exports.promptEngineer = promptEngineer;
-const promptInern = () => {
+const promptIntern = () => {
   return inquirer.prompt([
     {
       type: "input",
@@ -74,7 +74,7 @@ const promptInern = () => {
     },
   ]);
 };
-exports.promptInern = promptInern;
+exports.promptIntern = promptIntern;
 const promptAddTeamMembers = () => {
   return inquirer.prompt([
     {
